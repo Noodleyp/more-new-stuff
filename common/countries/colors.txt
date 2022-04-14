@@ -30,6 +30,35 @@ WGR = {
 color = rgb { 107 107 107 }
 color_ui = rgb { 110 110 110}
 }
+SWT = {
+color = rgb { 0 0 0 }
+color_ui = rgb { 0 0 0 }
+}
+RUS = {
+color = rgb { 57 158 77 }
+color_ui = rgb { 57 158 77 }
+}
+RFD = {
+color = rgb { 22 130 43 }
+color_ui = rgb { 22 130 43 }
+}
+RNR = {
+color = rgb { 43 94 53 }
+color_ui = rgb { 43 94 53 }
+}
+RBA = {
+color = rgb { 25 25 25 }
+color_ui = rgb { 25 25 25 }
+}
+KSR = {
+color = rgb { 125 75 75 }
+color_ui = rgb { 125 75 75 }
+}
+UFR = {
+color = rgb { 79 120 87 }
+color_ui = rgb { 79 120 87 }
+}
+
 #reload countrycolors
 
 GER = {

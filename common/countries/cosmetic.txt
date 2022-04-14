@@ -84,3 +84,7 @@ CROWN_KINGDOM_OF_LEVANT = {
  color = rgb { 29 87 145 }
  color_ui = rgb { 29 87 145 }
 }
+KINGDOMOFITALY = {
+ color = rgb { 29 87 145 }
+ color_ui = rgb { 29 87 145 }
+}

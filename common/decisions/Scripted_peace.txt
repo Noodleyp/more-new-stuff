@@ -481,6 +481,33 @@ Scripted_peace = {
 				transfer_state = 215
 				transfer_state = 213
 			}
+			RNR = {
+				transfer_state = 397
+				transfer_state = 262
+				transfer_state = 825
+				transfer_state = 581
+			}
+			RUS = {
+				transfer_state = 400
+				transfer_state = 398
+				transfer_state = 399
+				transfer_state = 249
+				transfer_state = 256
+				transfer_state = 833
+				transfer_state = 250
+				transfer_state = 251
+				transfer_state = 652
+				transfer_state = 651
+				transfer_state = 573
+				transfer_state = 582
+			}
+			UFR = {
+				transfer_state = 572
+				transfer_state = 653
+				transfer_state = 403
+				transfer_state = 580
+				transfer_state = 579
+			}
 		}
 	}
 	TAKEDUTCH = {
@@ -696,7 +723,8 @@ Scripted_peace = {
 			
 		}
 	}
-		FRAENGFALL = {
+	
+	FRAENGFALL = {
 		ai_will_do = {
 			factor = 1
 		}
@@ -945,4 +973,102 @@ Scripted_peace = {
 				}
 			}
 		}
-	}
+	KINGFRAFALLITA = {
+	
+		ai_will_do = {
+			factor = 5
+		}
+		visible = {
+			original_tag = FRA
+			
+			has_war_with = ITA
+			FRA = {
+				has_government = neutrality
+			}
+		}
+		available = {
+			ITA = {
+				surrender_progress > 0.7
+			}
+		}
+		complete_effect = {
+			white_peace = {
+				tag = GER
+				message = KINGFRAGERCOLL
+			}
+			FRA = {
+			    dismantle_faction = yes
+				create_faction = "Accords de Westphalie"
+				set_global_flag = FRA_POL_GERMAN_DIVISION
+				transfer_state = 273
+				transfer_state = 662
+				transfer_state = 661
+				transfer_state = 448
+				transfer_state = 450
+				transfer_state = 449
+				transfer_state = 451
+				transfer_state = 158
+				puppet = ITA
+			}
+				ITA = {
+					set_cosmetic_tag = KINGDOMOFITALY
+				}
+			}
+		}
+	KINGFRASPLITSWI= {
+	
+		ai_will_do = {
+			factor = 5
+		}
+		visible = {
+			original_tag = FRA
+			has_war_with = SWI
+			FRA = {
+				has_government = neutrality
+			}
+		}
+		available = {
+			SWI = {
+				surrender_progress > 0.7
+			}
+		}
+		complete_effect = {
+			white_peace = {
+				tag = SWI
+				message = KINGFRAGERCOLL
+			}
+			FRA = {
+			    dismantle_faction = yes
+				create_faction = "Accords de Westphalie"
+				set_global_flag = FRA_POL_GERMAN_DIVISION
+				annex_country = {
+					target = SWI
+				}
+				if = {
+					limit = {
+						AUS = {
+							is_puppet_of = FRA
+						}
+					}
+						AUS = {
+							transfer_state = 151
+							transfer_state = 3
+						}
+						ITA = {
+							transfer_state = 845
+						}
+						FRA = {
+							transfer_state = 846
+						}
+					}
+					else = {
+						FRA = {
+							annex_country = {
+								target = SWI
+							}
+						}
+					}
+				}
+			}
+		}
+	}	
