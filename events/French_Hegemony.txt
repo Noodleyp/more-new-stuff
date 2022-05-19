@@ -1,4 +1,5 @@
 add_namespace = Kingdom_France_victorious
+add_namespace = secondversailles
 country_event = {
 	id = kingdom_france_victorious.1
 	title = kingdom_france_victorious.1.t
@@ -24,5 +25,72 @@ country_event = {
 			add_state_core = 770
 			set_cosmetic_tag = UNITED_BOER_REPUBLICS
 		}
-	}	
+	}
+}
+country_event = {
+	id = secondversailles.1
+	title = secondversailles.1.t
+	desc = secondversailles.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option  {
+		name = secondversailles.1.a
+		WUR = {
+			transfer_state = 50
+		}
+		BAY = {
+			transfer_state = 52
+			transfer_state = 53
+			transfer_state = 54
+		}
+		PRE = {
+			transfer_state = 64
+			transfer_state = 68
+			transfer_state = 63
+			transfer_state = 62
+			transfer_state = 66
+			transfer_state = 67
+			transfer_state = 5
+			transfer_state = 763
+		}
+		SAX = {
+			transfer_state = 60
+			transfer_state = 65
+		}
+		SHL = {
+			transfer_state = 58
+		}
+		HAN = {
+			transfer_state = 59
+			transfer_state = 55
+			transfer_state = 57
+			transfer_state = 56
+		}
+		MEK = {
+			transfer_state = 61
+		}
+	}
+	option  {
+		name = secondversailles.1.b
+		political_power - 50
+	}
+}
+country_event = {
+	id = secondversailles.2
+	title = secondversailles.2.t
+	desc = secondversailles.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = secondversailles.2.a
+		ITA = {
+			set_cosmetic_tag = RITA
+		}
+	}
+	option = {
+		name = secondversailles.2.b
+		FRA = {
+			political_power - 50
+		}
+	}
 }

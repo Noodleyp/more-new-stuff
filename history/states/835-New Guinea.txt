@@ -1,0 +1,14 @@
+state={
+	id=835
+	name="STATE_835"
+	provinces={
+		1389 4393 7365 7614 10251 10423 11004 11018 12154 12193 12240 12400 12428 
+	}
+	history = {
+		owner = AST
+		add_core_of = PNG
+	}
+	manpower=54363
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

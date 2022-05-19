@@ -88,3 +88,11 @@ KINGDOMOFITALY = {
  color = rgb { 29 87 145 }
  color_ui = rgb { 29 87 145 }
 }
+OCCGER = {
+ color = rgb { 133 119 81 }
+ color_ui = rgb { 133 119 81 }
+}
+OCCITA = {
+	color = rgb { 50 168 82 }
+	color_ui = rgb { 50 168 82 }
+}

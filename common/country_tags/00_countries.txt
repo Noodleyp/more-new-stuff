@@ -246,3 +246,4 @@ KSR = "countries/Russian Warlords.txt" #Kazakh SSR
 RUS = "countries/Russian Warlords.txt" #Russian Republic
 RFD = "countries/Russian Warlords.txt" #Russian Federation
 UFR = "countries/Russian Warlords.txt" #Uralic Free Republic
+PLE = "countries/Russian Warlords.txt" #Polish Exiles

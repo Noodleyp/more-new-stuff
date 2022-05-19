@@ -1,0 +1,14 @@
+state={
+	id=836
+	name="STATE_836"
+	provinces={
+		4509 4552 7529 7570 10369 10396 10990 12371 
+	}
+	history = {
+		owner = INS
+		add_core_of = INS
+	}
+	manpower=45434
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,57 @@
+END_OCCUPATION = {
+	DENMARK = {
+		ai_will_do = {
+			factor = 1
+		}
+		visible= {
+			original_tag = DEN
+			DEN = {
+				has_country_flag = DENMARKOCCUPIED
+			}
+		}
+		available = {
+			owns_state = 99
+			owns_state = 37
+		}
+		fire_only_once = yes
+		complete_effect = {
+			DEN = {
+				drop_cosmetic_tag = yes
+				clr_country_flag = DENMARKOCCUPIED
+				annex_country = {
+					target = ICE
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	OUR_SUBJECTS = {
+		visible = {
+			any_subject_country = {
+				has_cosmetic_tag = MILOCC
+			}
+		}
+		complete_effect = {	
+			every_subject_country = {
+				if = {
+					limit = {
+						has_cosmetic_tag = MILOCC
+					}
+					drop_cosmetic_tag = yes
+					set_autonomy = {
+						target = THIS
+						autonomy_state = autonomy_free
+						end_wars = yes
+						end_civil_wars = yes
+					}
+					set_autonomy = {
+						target = THIS
+						autonomy_state = autonomy_puppet
+						end_wars = yes
+						end_civil_wars = yes
+					}
+				}
+			}
+		}
+	} 
+}

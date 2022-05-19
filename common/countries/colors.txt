@@ -38,6 +38,10 @@ RUS = {
 color = rgb { 57 158 77 }
 color_ui = rgb { 57 158 77 }
 }
+PLE = {
+color = rgb { 117 82 82 }
+color_ui = rgb { 117 82 82 }
+}
 RFD = {
 color = rgb { 22 130 43 }
 color_ui = rgb { 22 130 43 }
